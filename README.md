@@ -69,6 +69,7 @@ docker compose up
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/maxencelupion"><img src="https://avatars.githubusercontent.com/u/114016583?v=4?s=100" width="100px;" alt="Maxence Lupion"/><br /><sub><b>Maxence Lupion</b></sub></a><br /><a href="#code-maxencelupion" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Lowan974"><img src="https://avatars.githubusercontent.com/u/96384786?v=4?s=100" width="100px;" alt="Lowan974"/><br /><sub><b>Lowan974</b></sub></a><br /><a href="#code-Lowan974" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
