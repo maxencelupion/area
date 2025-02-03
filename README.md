@@ -68,7 +68,7 @@ docker compose up
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/maxencelupion"><img src="https://avatars.githubusercontent.com/u/114016583?v=4?s=100" width="100px;" alt="Maxence Lupion"/><br /><sub><b>Maxence Lupion</b></sub></a><br /><a href="#code-maxencelupion" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/maxencelupion"><img src="https://avatars.githubusercontent.com/u/114016583?v=4?s=100" width="100px;" alt="Maxence Lupion"/><br /><sub><b>Maxence Lupion</b></sub></a><br /><a href="#code-maxencelupion" title="Code">💻</a> <a href="#a11y-maxencelupion" title="Accessibility">️️️️♿️</a></td>
     </tr>
   </tbody>
 </table>
