@@ -1,0 +1,149 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0 20px 50px;
+}
+
+.profileHeader {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    border-bottom: 2px solid #FF0054;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.profileContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profileServicesContainer {
+    height: 550px;
+    width: 350px;
+    padding: 20px;
+    background: #011627;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.profileServicesTitle {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profileServicesCard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profileInfos {
+    padding: 20px 20px 20px 30px;
+ }
+
+.profileInfosHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.profileInfosHeaderText {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+}
+
+.profileCardList {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, 400px);
+     gap: 30px;
+ }
+
+.profileHeaderButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.profileHelpButton {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: row;
+    padding: 10px 25px;
+    background: #FF0054;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.profileHelpButton:hover {
+    color: #FF0054;
+    background: none;
+}
+
+.profileHeaderText {
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+@media (max-width: 1300px) {
+
+    .profileInfosHeader {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileCardList {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .profileContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .profileCardList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileInfos {
+        width: auto;
+    }
+
+    .profileServicesContainer {
+        width: auto;
+    }
+
+    .profileInfosHeaderText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .profileHeader {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}

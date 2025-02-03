@@ -1,0 +1,428 @@
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #011627;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5vw;
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px;
+  background-color: #1b2b34;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  min-height: 80vh;
+  margin-bottom: 1vh;
+}
+
+.areasContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px;
+  background-color: #1b2b34;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  max-height: 80vh;
+}
+
+.title {
+  margin-top: 2vw;
+  color: #ff0054;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 0;
+}
+
+.actionContainer,
+.reactionContainer {
+  position: relative;
+  width: 30vw;
+  height: 10vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.actionContainer {
+  background: #fdfffc;
+  color: #011627;
+}
+
+.actionContainer.selected {
+  background: #011627;
+  border: 3px solid #ff0054;
+}
+
+.reactionContainer {
+  background: #ff0054;
+  color: #fdfffc;
+}
+
+.actionText,
+.reactionText {
+  text-align: center;
+  margin-left: 6vw;
+  margin-right: 10px;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  white-space: normal;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.serviceIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.addAction {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #011627;
+  opacity: 75%;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ifText,
+.thenText {
+  font-size: 2.5em;
+  margin-right: 10px;
+  width: 1vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.thenText {
+  color: #fdfffc;
+}
+
+.dottedLine {
+  width: 2px;
+  height: 90px;
+  border-left: 5px dotted transparent;
+  position: relative;
+}
+
+.dottedLine::before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu {
+  background-color: #011627;
+  top: calc(100% + 5px);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  max-height: 12em;
+  overflow-y: auto;
+  width: 28vw;
+}
+
+.menuReaction {
+  background-color: #011627;
+  top: calc(100% + 5px);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  max-height: 12em;
+  overflow-y: auto;
+  width: 28vw;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menuItem:hover {
+  filter: brightness(85%);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.continueButton {
+  width: 310px;
+  height: 67px;
+  padding: 20px 0;
+  background: #ff0054;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.colorPickerContainer {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.continueButton2 {
+  width: 310px;
+  height: 67px;
+  padding: 20px 0;
+  background: #ff0054;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin: auto;
+  color: #fdfffc;
+}
+
+.popupButtonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.continueButton:hover {
+  background: #ff3366;
+}
+
+.buttonText {
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.areasContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: #1b2b34;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  min-height: 80vh;
+}
+
+.areasList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5vw;
+  margin-left: 2.5vh;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background: #1b2b34;
+  color: #fdfffc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.connectButton {
+  background-color: #ff0054;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 20px 0;
+  margin-right: 1%;
+  transition: background-color 0.3s ease;
+}
+
+.connectButton:hover {
+  background-color: #cc0048;
+}
+
+.closeButton {
+  background-color: #1b2b34;
+  color: #fdfffc;
+  border: 1px solid #ff0054;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.closeText {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.closeButton:hover {
+  background-color: #2a3a4a;
+}
+
+.label {
+  font-size: 1.5em;
+  color: #ff0054;
+  margin-top: 2vh;
+  font-weight: bold;
+}
+
+.input {
+  width: 95%;
+  padding: 10px;
+  padding-bottom: 1.5vh;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  outline: none;
+  font-size: 1em;
+  background-color: #fdfffc;
+  color: #1b2b34;
+  margin-bottom: 1vh;
+  margin-right: 5vw;
+}
+
+.inputError {
+  border-color: #ff0054;
+}
+
+.errorText {
+  color: #ff0054;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fdfffc;
+  font-size: 1.2em;
+  margin-top: 25vh;
+}
+
+.emptyIcon {
+  font-size: 4em;
+  margin-bottom: 1vh;
+}
+
+.emptyText {
+  color: #fdfffc;
+  font-size: 1.5em;
+}
+
+.additionalReactionContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  position: relative;
+}
+
+.addReactionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2em;
+  color: #ff0054;
+  margin-top: 3vh;
+  margin-left: 1.6vw;
+}
+
+.trashIcon {
+  margin-left: 2vw;
+  cursor: pointer;
+  color: #fdfffc;
+  font-size: 2.2em;
+}
+
+.addActionThenComponentIndex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6.5vh;
+}

@@ -1,0 +1,14 @@
+.titleStyle {
+    color: #FF0054;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+    .titleStyle {
+        font-size: 3em;
+        text-align: center;
+    }
+}

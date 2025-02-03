@@ -1,0 +1,90 @@
+.helpContainer {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 7vh;
+}
+
+.helpGoBackButton {
+    display: flex;
+    padding: 0.5em;
+    width: 10em;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #FF0054;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.helpGoBackButton:hover {
+    scale: 110%;
+}
+
+.helpGoBackText {
+    color: #FF0054;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.helpContent {
+    width: auto;
+}
+
+.helpHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    gap: 1vh;
+}
+
+.helpHeaderText {
+    color: white;
+    font-weight: 600;
+}
+
+.helpElements {
+    padding: 0 5em;
+}
+
+.helpElementsHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.helpElementList {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.helpList {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.helpListContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.helpElementsText {
+    color: white;
+    font-weight: 600;
+}
+
+.helpElementContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}

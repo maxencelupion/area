@@ -1,0 +1,83 @@
+.areaHeaderContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.areaHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 90%;
+    text-align: right;
+}
+
+.areaIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.areaIcon + .areaIcon{
+    margin-left: 20px;
+}
+
+.areaTextContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.areaTextContent {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.areaIfThen {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.areaCardHoverText {
+    position: absolute;
+    bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(50%);
+    color: white;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-weight: 700;
+}
+
+.areaCardHoverText.areaShowText {
+    opacity: 1;
+    transform: translateY(-200%);
+}
+
+
+@media (max-width: 550px) {
+
+    .areaHeader {
+        flex-direction: column;
+    }
+
+    .areaIcons {
+        margin-bottom: 20px;
+    }
+
+    .areaText {
+        font-size: 1.5em;
+        width: 100%;
+    }
+}

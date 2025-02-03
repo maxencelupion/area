@@ -1,0 +1,44 @@
+.serviceCardContainer {
+    padding: 200px;
+}
+
+.cardTitle {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.cardAdd {
+    background: rgba(1, 22, 39, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+}
+
+.cardHoverText {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    transform: translateY(50%);
+    color: white;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cardHoverText.showText {
+    opacity: 1;
+    transform: translateY(-200%);
+}
+
+@media (max-width: 550px) {
+    .serviceCardContainer {
+        width: 80px;
+    }
+
+}

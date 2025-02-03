@@ -1,0 +1,10 @@
+.alertButtonText {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.alertButtonContainer:hover {
+    transform: scale(110%);
+}

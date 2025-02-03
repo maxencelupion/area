@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "mobile",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/navbar/NExPO.png",
+    "owner": "theo.vermorel",
+    "userInterfaceStyle": "light",
+    "scheme": "area",
+    "splash": {
+      "image": "./assets/navbar/NExPO.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#011627"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/navbar/NExPO.png",
+        "backgroundColor": "#011627"
+      },
+      "package": "com.theo.vermorel.mobile"
+    },
+    "web": {
+      "favicon": "./assets/navbar/NExPO.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "146df02a-79ff-4b53-9ed4-3df3ce1a764c"
+      }
+    }
+  }
+}

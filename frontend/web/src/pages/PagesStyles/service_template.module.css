@@ -1,0 +1,185 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #011627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding: 16px;
+  overflow-x: hidden;
+  margin-right: 5px;
+}
+
+.icon {
+  margin: 16px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceCard {
+  width: 100%;
+  max-width: 1064px;
+  height: auto;
+  background: radial-gradient(at left bottom, #2365E0, #011727);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  border: 1px solid #2365E0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.serviceText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  margin: 16px auto;
+}
+
+.serviceTitle {
+  color: #2365E0;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.serviceDescription {
+  width: 100%;
+  max-width: 482px;
+  color: #FDFFFC;
+  font-size: 32px;
+  font-weight: 700;
+    text-align: center;
+}
+
+.connectButton {
+  width: 100%;
+  max-width: 489px;
+  height: 66px;
+  padding: 16px 0;
+  background: rgba(1, 22, 39, 0.25);
+  border-radius: 32px;
+  border: 5px solid #2365E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 25px;
+  margin: 16px auto;
+  cursor: pointer;
+}
+
+.buttonText {
+  text-align: center;
+  color: #2365E0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cardContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.profileActionsContainer {
+  width: 100%;
+  max-width: 1050px;
+  padding: 20px;
+  background: #011627;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  overflow: auto;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .serviceCard {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .serviceDescription {
+    font-size: 28px;
+  }
+
+  .connectButton {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .serviceCard {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .serviceTitle {
+    font-size: 28px;
+  }
+
+  .serviceDescription {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .connectButton {
+    height: 56px;
+    padding: 14px 0;
+  }
+
+  .buttonText {
+    font-size: 20px;
+  }
+
+  .profileActionsContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-top: 2%;
+  }
+
+  .serviceCard {
+    padding: 16px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .serviceTitle {
+    font-size: 24px;
+  }
+
+  .serviceDescription {
+    font-size: 20px;
+  }
+
+  .connectButton {
+    height: 50px;
+    padding: 12px 0;
+  }
+
+  .buttonText {
+    font-size: 18px;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

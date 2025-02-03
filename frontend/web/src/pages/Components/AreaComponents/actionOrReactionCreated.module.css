@@ -1,0 +1,36 @@
+.cardContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: #FDFFFC;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cardContainer:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.iconContainer {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.cardContent {
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #FDFFFC;
+}
+
+.cardDescription {
+  font-size: 1.5em;
+  color: #FDFFFC;
+  text-align: center;
+  margin-top: 5px;
+}

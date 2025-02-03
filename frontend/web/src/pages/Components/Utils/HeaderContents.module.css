@@ -1,0 +1,44 @@
+.headerText {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.headerTop {
+    width: auto;
+}
+
+.circle {
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    background: white;
+    border-radius: 50px;
+    margin: 0 0 10px;
+}
+
+.headerContent {
+    color: white;
+    width: 70%;
+    font-size: 1.5em;
+}
+
+@media (max-width: 1350px) {
+    .headerText {
+        width: auto;
+        align-items: center;
+    }
+
+    .headerContent {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .headerContent {
+        width: 100%;
+        height: auto;
+        font-size: 1.2em;
+    }
+}

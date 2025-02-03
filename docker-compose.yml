@@ -1,0 +1,92 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+    container_name: area_postgres
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    networks:
+      - my_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    container_name: area_pgadmin
+    env_file:
+      - .env
+    ports:
+      - '5050:80'
+    depends_on:
+      - db
+    networks:
+      - my_network
+
+  server:
+    depends_on:
+      - db
+    build:
+      context: ./backend/
+      dockerfile: backend.Dockerfile
+      target: ${TARGET}
+    container_name: area_backend
+    env_file:
+      - .env
+    ports:
+      - '8080:8080'
+    networks:
+      - my_network
+
+  # nginx:
+  #   depends_on:
+  #     - server
+  #   image: nginx:latest
+  #   container_name: area_nginx
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/nginx.conf
+  #     - ./certificates:/etc/ssl/area.tvermorel.fr/
+  #   ports:
+  #     - '443:443'
+  #     - '80:80'
+  #   networks:
+  #     - my_network
+
+  # client_mobile:
+  #   build:
+  #     context: ./frontend/mobile
+  #     dockerfile: mobile.Dockerfile
+  #     args:
+  #       - EXPO_USER=${EXPO_USER}
+  #       - EXPO_PASS=${EXPO_PASS}
+  #   container_name: area_frontend_mobile
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - shared-volume:/app
+
+  client_web:
+    depends_on:
+      - server
+    build:
+      context: ./frontend/web/
+      dockerfile: frontend.Dockerfile
+      target: ${TARGET}
+    container_name: area_frontend_web
+    env_file:
+      - .env
+    volumes:
+      - shared-volume:/app/public/assets/apk
+    ports:
+      - '8081:3000'
+    networks:
+      - my_network
+
+volumes:
+  shared-volume:
+  data:
+
+networks:
+  my_network:
