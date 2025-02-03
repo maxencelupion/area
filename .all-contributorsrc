@@ -14,7 +14,18 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/114016583?v=4",
       "profile": "https://github.com/maxencelupion",
       "contributions": [
-        "code"
+        "code",
+        "a11y"
+      ]
+    },
+    {
+      "login": "Lowan974",
+      "name": "Lowan974",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96384786?v=4",
+      "profile": "https://github.com/Lowan974",
+      "contributions": [
+        "code",
+        "design"
       ]
     },
     {
@@ -25,6 +36,26 @@
       "contributions": [
         "code",
         "example"
+      ]
+    },
+    {
+      "login": "zoldik333",
+      "name": "Théo Vermorel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114875350?v=4",
+      "profile": "https://github.com/zoldik333",
+      "contributions": [
+        "projectManagement",
+        "code"
+      ]
+    },
+    {
+      "login": "giordano-pierre",
+      "name": "giordano-pierre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114906570?v=4",
+      "profile": "https://github.com/giordano-pierre",
+      "contributions": [
+        "code",
+        "design"
       ]
     }
   ]
