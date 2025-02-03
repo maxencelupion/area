@@ -60,34 +60,16 @@ docker compose build
 docker compose up
 ```
 ## Results
-Some screens about what you can find on our website version !
+Here are some screenshots showcasing key features and pages of our website version.
 
-<img src="https://github.com/user-attachments/assets/1d3fb944-e76a-4a27-aa55-7fda952b174d">
-<img src="https://github.com/user-attachments/assets/ae0b3959-17af-4eb9-a58f-20ac6c804c98">
-<img src="https://github.com/user-attachments/assets/b76a3b09-d90b-4af3-b580-c13865bb0e3a">
-
-*Homepage*
-
-<img src="https://github.com/user-attachments/assets/9adc81d4-d429-4f18-8198-c184fd96953d">
-<img src="https://github.com/user-attachments/assets/09fa3712-6896-497e-bdaa-10731fd904cd">
-
-*Services and examples Areas on Services page*
-
-<img src="https://github.com/user-attachments/assets/b1d2c1d7-7920-4ffd-adc5-2ca857b87cfd">
-
-*Login / Signup using Oauth2 or basic email/password auth*
-
-<img src="https://github.com/user-attachments/assets/b2ecff5a-8662-4b43-9538-dec48b00fb03">
-
-*Area creation on My Areas page*
-
-<img src="https://github.com/user-attachments/assets/f14934c8-4e21-4608-ad85-a3c9806a7374">
-
-*Profile page*
-
-<img src="https://github.com/user-attachments/assets/48e4db84-1622-435e-82d2-5db95c73c43b">
-
-*Help page through Profile page*
+| Page | Results |
+|------|-----------|
+| **Homepage** | ![Homepage](https://github.com/user-attachments/assets/2729ae22-1949-4018-a30a-be92e1a9698e) |
+| **Services Page** (Example Areas) | ![Services](https://github.com/user-attachments/assets/a99e5f4e-4ced-4e47-94f8-8fa2f6fa8943) |
+| **Login / Signup** (OAuth2 & Email/Password) | ![Auth](https://github.com/user-attachments/assets/62810c21-0126-43c6-8895-724ca17d1451) |
+| **My Areas** (Create an Area) | ![My Areas](https://github.com/user-attachments/assets/c8ada914-bc67-48e9-9a7a-7db436f6ef45) |
+| **Profile Page** | ![Profile](https://github.com/user-attachments/assets/184d8fb6-20d5-4126-b468-87e3e7681ea8) |
+| **Help Page** (via Profile) | ![Help](https://github.com/user-attachments/assets/245b63f9-d58c-40bc-9137-3a4f52c630e8) |
 
 
 ## Contributors
