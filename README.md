@@ -25,8 +25,8 @@
 
   ### 1. Clone the Repository
   ```bash
-  git clone https://github.com/giordano-pierre/Nexpo
-  cd Nexpo
+  git clone git@github.com:maxencelupion/area.git
+  cd area
   ```
 
   ### 2. Certificates
@@ -54,7 +54,10 @@
   sudo ufw allow 443
   ```
 
-  ### 3. Build project
+  ### 5. Fill env variables
+  Fill all required env variables, following the env.examples.
+
+  ### 6. Build project
   ```bash
   docker compose build
   docker compose up
